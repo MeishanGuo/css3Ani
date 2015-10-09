@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>动画分享</title>
+	<meta charset='utf-8'>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">	
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/content.css">
+</head>
+<body>
+	<!--左侧导航部分-->
+		<nav preShowStyle='content_show_style_top' preShowNode = 'index'>
+			<li navName='index'>index</li>
+			<li navName='demo_01'>Case</li>
+			<li navName='base_action'>base</li>
+			<li navName='all_tech'>tech</li>
+			<li navName='js_vs_css'>VS</li>
+			<li navName='transition'>transition</li>
+			<li navName='animation'>animation</li>
+			<li navName='extraAni'>what</li>
+			<li navName='end'>end</li>
+		</nav>
+	<!--主题board部分-->
+		<section class="index content_show_style_top animation_wrapper">
+			<header></header>
+			<arcle class='main_content'>
+				<div class='index_top'>
+					<p>
+						<span>A</span>
+						<span>n</span>
+						<span>i</span>
+						<span>m</span>
+						<span>a</span>
+						<span>t</span>
+						<span>i</span>
+						<span>o</span>
+						<span>n</span>
+					</p>
+				</div>
+				<div class='index_bottom'>
+					<p>GMS</p>
+				</div>
+			</arcle>
+			<footer></footer>
+		</section>
+
+		<section class="demo_01">
+			<a href="http://www.tita.com/" target='_blank'>Case</a>
+			<p>动画的<span>基本动作</span>有哪些?</p>
+		</section>
+
+		<section class="base_action common_list">
+			<header>动画的基本动作？</header>
+			<article>
+				<span>
+					1、位移(屏幕的上、下、左、右)<a href='guoshanche.html' target='_blank'>过山车</a>
+					<div class='stage translate for_3D'>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</span>
+				<span>
+					2、旋转（2d 、 3d）
+					<div class='stage rotate'>
+						<div class='fl'>
+							<span>X</span>
+							<span>Y</span>
+						</div>
+						<div class="for_3D fr">
+							<span>X</span>
+							<span>Y</span>
+							<span>Z</span>
+						</div>
+					</div>
+				</span>
+				<span>
+					3、缩放 
+					<div class='stage scale'>
+						<span></span>
+					</div>
+				</span>
+				<span>
+					4、透明度
+					<div class='stage opacity'>
+						<span></span>
+					</div>
+				</span>
+				<span>
+					5、其他渐变（颜色、长宽、定位、圆角、阴影 ... ）
+					<div class='stage extra'>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</span>
+			</article>
+			<footer></footer>
+		</section>
+
+		<section class="all_tech common_list">
+			<header>哪些技术可以实现页面动画</header>
+			<article>
+				<span>1、<a href='html/gif.html' target='_blank'>GIF图片</a></span>
+				<span>2、Flash</span>
+				<span>3、JS <label>（setTimeout、setInterval）<label></span>
+				<span>4、jQuery</span>
+				<span>5、CSS3<label>（transition 、transform）</label></span>
+				<span>6、HTML5 <label>canvas</label></span>
+				<span>7、svg</span>
+				<span>8、基于以上进行封装的动画库<label>（Velocity、D3.....）</label></span>
+			</article>
+			<footer></footer>
+		</section>
+		<section class="js_vs_css">
+			<header>JS<i> VS </i>CSS</header>
+			<article>
+				<div>
+					<span>
+						<p>$("button").click(function(){</p>
+						<p>&nbsp;&nbsp;$("div").animate({</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;left:'250px',</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;opacity:'0.5',</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;height:'150px',</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;width:'150px'</p>
+						<p>&nbsp;&nbsp;});</p>
+						<p>}); </p>
+					</span>
+				</div>
+				<div>
+					<span>
+						<p>-webkit-transition:all 2s linear 0s;</p>
+					</span>
+				</div>
+			</article>
+		</section>
+
+		<section class="transition for_p">
+			<header>Transition 动画</header>
+			<article>
+				<p>transition-property:<i>property</i></p>
+				<p>transition-duration:<i>time</i></p>
+				<p>transition-timing-function:<i>timing-function</i></p>
+				<p>transition-delay:<i>time</i></p>
+				<p class='seprate_line'></p>
+				<span>transition: <i> property duration timing-function delay;</i></span>
+				<p>EG：transition: <i> width 2s ease 0s;</i></p>
+				<p class='seprate_line'></p>
+				<a href="http://cubic-bezier.com" target='_blank'>cubic-bezier</a>
+			</article>
+		</section>
+
+		<section class="animation for_p">
+			<header>Animation 动画</header>
+			<article>
+				<p>animation-name:<i>name</i></p>
+				<p>animation-duration:<i>duration</i></p>
+				<p>animation-timing-function:<i>timing-function</i></p>
+				<p>animation-delay:<i>delay</i></p>
+				<p>animation-iteration-count<i>count</i></p>
+				<p>animation-direction: <i>direction</i></p>
+				<p class='seprate_line'></p>
+				<span>transition: <i> name duration timing-function delay;</i></span>
+				<p>EG：transition: <i> goLeft 2s ease 0s infinite;</i></p>
+			</article>
+		</section>
+
+		<section class="extraAni">
+			<header>能做什么</header>
+			<article>
+				<a href="http://www.17sucai.com/preview/373/2013-11-21/rainyday.js-master_/index.html" target='_blank'>雨</a>
+				<a href="html/animate1.html" target='_blank'>很酷</a>
+				<a href="html/clock.html" target='_blank'>表</a>
+				<a href="html/circle.html" target='_blank'>环</a>
+				<a href="html/pureCSS3Loader.html" target='_blank'>loader</a>
+				<a href="html/SVGFonts.html" target='_blank'>font</a>
+				<a href="html/velocity.html" target='_blank'>velocity</a>
+				<a href="html/light.html" target='_blank'>呼吸灯</a>
+				<a href="html/touzi.html" target='_blank'>骰子</a>
+				<a href="html/album-2d.html" target='_blank'>相册-2d</a>				
+				<a href="html/album-3d.html" target='_blank'>相册-3d</a>				
+			</article>
+		</section>
+		<section class="end">
+			<header>to the end</header>
+				<a href="html/guaceng.html">最后的话</a>
+		</section>
+
+</body>
+	<script type="text/javascript" src='js/jquery.js'></script>
+	<script type="text/javascript" src='js/switchBoard.js'></script>
+	<script type="text/javascript" src='js/allPageCommond.js'></script>
+	<script type="text/javascript" src='js/canvas.js'></script>
+
+</html>
